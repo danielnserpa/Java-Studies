@@ -11,6 +11,10 @@ public class ApplicationController {
         applications.add(new ApplicationController(role, companyName, date, status));
     }
 
+    public static void removeFromList (ArrayList<ApplicationController> applications, String role, String companyName, String date, String status) {
+        applications.remove(new ApplicationController(role, companyName, date, status));
+    }
+
     String role;
     String companyName;
     String date;
@@ -29,6 +33,8 @@ public class ApplicationController {
 
         ApplicationController.addToList(applications, "Dev", "IBM", "10/01/25", "Applied");
         ApplicationController.addToList(applications, "Customer Service","Accenture", "10/01/25", "Applied");
+        ApplicationController.removeFromList(applications, "Dev", "IBM", "10/01/25", "Applied");
+
 
         System.out.println(applications);
 
