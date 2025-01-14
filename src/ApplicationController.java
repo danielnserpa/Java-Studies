@@ -24,7 +24,7 @@ public class ApplicationController {
         this.role = role;
         this.companyName = companyName;
         this.date = date;
-        this.status = status;
+        this.status = status
     }
 
     public static void main(String[] args) {
